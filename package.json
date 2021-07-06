@@ -1,0 +1,22 @@
+{
+  "name": "coil-site",
+  "private": true,
+  "homepage": "",
+  "bugs": {
+    "url": "https://github.com/uscensusbureau/the-opportunity-project/issues"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "COIL",
+  "contributors": [
+    "Sam Potasznik <samuel.h.potasznik@census.gov>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uscensusbureau/the-opportunity-project"
+  },
+    "scripts": {
+      "airtable": "(./scripts/airtable.sh)",
+      "serve": "bundle exec jekyll serve --drafts --future --incremental --livereload",
+      "start": "bundle exec jekyll serve --drafts --future"
+  }
+}
