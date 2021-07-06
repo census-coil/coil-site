@@ -1,10 +1,19 @@
+---
+<!-- main: foo, bar, qxz -->
+---
 <!DOCTYPE html>
 <!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"><!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
+<!--<![endif]-->
   <head>
-    {% include head.html %}
+    {% include meta.html %}
+    {% include styles.html %}
+    {% if site.google_analytics_ua or site.dap_agency %}
+      {% include analytics.html %}
+    {% endif %}
   </head>
-  <body class="page-{{ page.title | slugify }} layout-{{ page.layout }} {% if page.class %}page-{{ page.class | slugify }}{% endif %}">
+  <body class="{{ layout.class }} {{ page.class }} {% if site.site_width %}site-{{ site.site_width }}{% endif %}">
     {{ content }}
     {% include scripts.html %}
   </body>

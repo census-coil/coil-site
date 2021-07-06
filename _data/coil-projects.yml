@@ -3,7 +3,7 @@
   projects:
     - title: The Opportunity Project
       img:
-        src: photos/coil/april2021refresh/workshop2.jpg
+        src: projects/workshop2.jpg
         alt: workshop participants huddling around a large sticky pad
       callout: Build digital tools and bridge communities with federal open data.
       details: TOP brings together community advocates, technology specialists, and federal data stewards to our nation’s toughest challenges. Over twelve weeks, stakeholders from these three groups form teams, create digital products, and demo them to the public with COIL’s facilitation.
@@ -25,7 +25,7 @@
         - Experience Design
         - Talent Building
       img: 
-        src: photos/coil/april2021refresh/HCD-Training-Photos-23-edit.jpg
+        src: projects/HCD-Training-Photos-23-edit.jpg
         alt: Four people standing and smiling in front of a white board covered with sticky notes
     - title: Civic Digital Fellowship
       href: https://www.codingitforward.com/civic-digital-fellowship
@@ -36,9 +36,9 @@
         - Product Development
         - Talent Building
       img:
-        src: photos/coil/april2021refresh/fellows.jpg
+        src: projects/fellows.jpg
         alt: Many rows of young people on the steps of a federal building wearing suits and smiling towards the camera
-
+        
 - title: Our Products and Toolkits
   projects:
     - title: Creative Toolkits
