@@ -4,4 +4,13 @@ body {
   height: auto;
 }
 
+.footer-section-bottom {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 @import './coil-site.scss'

@@ -1,0 +1,12 @@
+footer:
+  - text: Census Open Innovation Labs
+    href: coil/
+  - text: Privacy
+    href: https://www.census.gov/about/policies/privacy.html
+    isExternal: true
+  - text: Accessibility
+    href: https://www.census.gov/about/policies/privacy/privacy-policy.html#accessibility
+    isExternal: true
+  - text: GitHub
+    href: https://github.com/census-coil/coil-site
+    isExternal: true
