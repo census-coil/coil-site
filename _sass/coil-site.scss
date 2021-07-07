@@ -2,7 +2,7 @@
 @use "sass:list";
 @import './links.scss';
 
-.layout-coil {
+.home {
   @include u-bg('base-darkest');
   @include u-text('white');
   @include white-links;
@@ -320,7 +320,7 @@ $blue-50: #2378c3;
     @extend .coil-btn;
     border: 1px dotted color('white');
     &:hover, &:active {
-      @include u-border-color('primary-light');
+      @include u-border-color('primary-lighter');
     }
   }
   &__primary-white {

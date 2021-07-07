@@ -1,7 +1,7 @@
 ---
 permalink: /coil/
 title: "Census Open Innovation Labs"
-layout: coil
+layout: home
 class: coil
 
 typeform: https://jmn7vkn4eg2.typeform.com/to/UM8tQQdB
