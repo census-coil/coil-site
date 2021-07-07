@@ -1,1 +1,7 @@
+html,
+body {
+  @include typeset("lang");
+  height: auto;
+}
+
 @import './coil-site.scss'
