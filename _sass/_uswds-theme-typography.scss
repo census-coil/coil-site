@@ -77,7 +77,7 @@ Relative font file path
 ----------------------------------------
 */
 
-$theme-font-path: "../fonts";
+$theme-font-path: "../../../../assets/fonts/";
 
 /*
 ----------------------------------------
@@ -262,7 +262,7 @@ $theme-font-serif-custom-src: (
 $theme-font-cond-custom-src: false;
 $theme-font-icon-custom-src: false;
 $theme-font-lang-custom-src: (
-  dir: 'silka',
+  dir: $theme-font-path + 'silka',
   roman: (
     100: false,
     200: false,
@@ -276,7 +276,7 @@ $theme-font-lang-custom-src: (
   )
 );
 $theme-font-mono-custom-src:  (
-  dir: 'silka-mono',
+  dir: $theme-font-path + 'silka-mono',
   roman: (
     100: false,
     200: false,
@@ -288,9 +288,9 @@ $theme-font-mono-custom-src:  (
     800: false,
     900: false,
   )
-);;
+);
 $theme-font-sans-custom-src: (
-  dir: 'silka',
+  dir: $theme-font-path + 'silka',
   roman: (
     100: false,
     200: false,
