@@ -1,3 +1,51 @@
+#galleryPlayPause {
+  float: right;
+  @include u-margin-right(5);
+  @media (prefers-reduced-motion: reduce) {
+    display: none;
+  }
+}
+
+.playPauseButton {
+  cursor: pointer;
+  @extend .coil-btn__secondary-white;
+  @include u-padding(1);  
+  @include u-bg('base-darkest');
+  z-index: 100;
+}
+
+$pauseButtonWidth: 4;
+$buttonIconColor: 'white';
+.playPauseDisplay {
+  @include u-width($pauseButtonWidth);
+  @include u-height($pauseButtonWidth);
+  box-sizing: border-box;
+  border-color: transparent transparent transparent color($buttonIconColor);
+  &.play {
+    border-style: solid;
+    border-width: units($pauseButtonWidth / 2) 0 units($pauseButtonWidth / 2) units($pauseButtonWidth);
+  }
+  &.pause {
+    border-style: double;
+    border-width: 0 0 0 units($pauseButtonWidth);
+    border-radius: 3px;
+  }
+}
+
+.gallery-section {
+  position: relative;
+  overflow: hidden;
+  @include at-media-max('tablet') {
+    display: none;
+  }
+}
+.scrolling-gallery {
+  width: 100%;
+  height: 36rem;
+  overflow: hidden;
+  position: relative;
+}
+
 
 $coil-tile-min-top: 0px;
 $max-top-spacing: 50px; 

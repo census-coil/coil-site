@@ -1,7 +1,13 @@
 html,
 body {
   @include typeset("lang");
-  height: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  flex-grow: 1;
 }
 
 .footer-section-bottom {

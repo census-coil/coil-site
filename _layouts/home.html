@@ -1,6 +1,6 @@
 ---
 layout: base
-class: home
+class:
 ---
 
 <main id="main-content">
@@ -9,7 +9,7 @@ class: home
     {% include scrolling-gallery.html data=site.data.coil-images %}
   {% endcomment %}
 
-  <section class="coil-hero coil-section usa-section margin-top-8">
+  <section class="coil-hero coil-section usa-section usa-section--dark bg-base-darkest">
     <div>
       <h1 class="line-height-sans-3 font-sans-2xl maxw-tablet-lg">{{ page.hero.text }}</h1>
     </div>
@@ -35,7 +35,7 @@ class: home
     {% endfor %}
   </section>
 
-  <section id="get-involved" class="coil-section">
+  <section id="get-involved" class="coil-section usa-section--dark bg-base-darkest">
     <div>
       <img class="abstract-icon" src="{{ site.baseurl }}/assets/img{{page.get-involved.icon}}" alt="" data-proofer-ignore>
     </div>

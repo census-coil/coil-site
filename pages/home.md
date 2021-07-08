@@ -1,5 +1,5 @@
 ---
-permalink: /coil/
+permalink: /
 title: "Census Open Innovation Labs"
 layout: home
 class: coil

@@ -1,25 +1,25 @@
 ---
 permalink: /404.html
-layout: default
+layout: base
+class:
 ---
+{% capture markdown %}
+# Page not found
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+### We're sorry. We can't find the page you're looking for. It might have been removed, changed its name, or be temporarily unavailable.
 
-<div class="container">
-  <h1>404</h1>
+If you typed the URL directly in your address bar, check your spelling and capitalization. Our URLs look like this: **coil.census.gov/example**.
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+Please visit our homepage for helpful tools and resources, or contact us and we'll point you in the right direction.
+
+[Visit homepage]({{site.baseurl}}/){: .usa-button }
+[Contact Us](mailto:{{site.email}}){: .usa-button .usa-button--outline }
+{% endcapture %}
+
+<main id="main-content">
+  <section class="usa-section margin-y-10">
+    <div class="grid-container">
+      {{ markdown | markdownify }}
+    </div>
+  </section>
+</main>
