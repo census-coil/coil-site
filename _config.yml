@@ -9,8 +9,8 @@ top-form: https://www.census.gov/forms/contact-top.html
 
 # Build settings
 theme: uswds-jekyll
-# plugins:
-  # - jekyll-feed
+plugins:
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -23,14 +23,22 @@ theme: uswds-jekyll
 exclude:
   - .sass-cache/
   - .jekyll-cache/
+  - cypress/
+  - cypress.json
   - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - jekyll/
+  - LICENSE.md
+  - pa11y.json
+  - package.json
+  - package-lock.json
   - node_modules/
+  - README.md
+  - scripts/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - cypress.json
   - img
   - files
