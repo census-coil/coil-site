@@ -31,3 +31,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - cypress.json
+  - img
+  - files
