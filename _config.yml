@@ -1,14 +1,13 @@
 title: Cenus Open Innovation Labs
 description: >- # this means to ignore newlines until "baseurl:"
   Trailblazing open government through cross-sector collaboration, design, and technology.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://coil.census.gov" # the base hostname & protocol for your site, e.g. http://example.com
 
 email: census.openinnovationlabs@census.gov
 top-form: https://www.census.gov/forms/contact-top.html
 
 # Build settings
-theme: uswds-jekyll
+# theme: uswds-jekyll
 plugins:
   - jekyll-sitemap
 

@@ -1,0 +1,23 @@
+html,
+body {
+  @include typeset("lang");
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  flex-grow: 1;
+}
+
+.footer-section-bottom {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@import './custom/links.scss';
+@import './custom/coil-site.scss';
