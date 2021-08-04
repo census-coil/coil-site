@@ -5,3 +5,4 @@ _site
 .env
 vendor
 node_modules
+assets/uswds
