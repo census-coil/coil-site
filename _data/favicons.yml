@@ -1,5 +1,4 @@
 # configuration for the site favicons.
-# see https://github.com/18F/uswds-jekyll/blob/main/_includes/favicon.html for usage
 
 - rel: shortcut icon
   type: image/ico

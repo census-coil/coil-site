@@ -11,12 +11,6 @@
 .light-mode {
   @include u-bg('white');
   @include u-color('black');
-  // a {
-  //   text-decoration: underline;
-  //   @include u-color('black');
-  // }
-  // @include dark-links;
-  
 }
 
 .small-only {
@@ -101,7 +95,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   @include u-padding-y(2);
 }
 .coil-navbar {
-  @include u-padding-x(2);
+  @include u-padding-x(3);
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -114,7 +108,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 }
 
 .coil-section {
-  // @include u-margin-y(8);
   @include u-padding-top(15);
   @include u-padding-bottom(8);
   > *:not(.coil-section-exempt) {
@@ -139,7 +132,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   }
   &:last-of-type {
     @include u-padding-bottom(15);
-    // @include u-margin-bottom(4);
     @include u-border-top(1px, 'white');
     @include u-border-bottom(1px, 'white');
   }
@@ -147,8 +139,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 
 .coil-hero {
   @include u-margin-top(0);
-  // @include u-margin-x(2);
-  // @include u-maxw('tablet');
 }
 
 .coil-project-lg, .project-large-text, .coil-card-container {
@@ -244,8 +234,6 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 .project-tags {
   @include u-margin-y(1);
 }
-$facilitation: #2B78BF;
-$blue-50: #2378c3;
 .project-tag {
   @include u-font('sans', '3xs');
   @include u-text('uppercase');

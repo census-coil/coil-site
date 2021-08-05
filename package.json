@@ -19,13 +19,41 @@
     "cypress": "npx cypress open",
     "html-proofer": "htmlproofer --allow_hash_href --assume_extension --only_4xx ./_site",
     "html-proofer:skip-external": "htmlproofer --allow_hash_href --assume_extension --disable_external ./_site",
+    "federalist": "npm install && ./build.sh && npm run uswds-copy-assets && npm run uswds-build-sass",
+    "jekyll-install": "gem install bundler && bundle install",
     "pa11y-ci": "pa11y-ci --config pa11y.json",
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\"",
-    "serve": "bundle exec jekyll serve --drafts --future --incremental --livereload",
-    "start": "bundle exec jekyll serve --drafts --future"
+    "serve": "bundle exec jekyll serve --drafts --future --incremental --livereload --config _config.yml,_config_dev.yml",
+    "start": "npm install && npm update uswds && npm run jekyll-install && npm run uswds-copy-assets && npm run uswds-copy-theme && npm run uswds-build-sass",
+    "uswds-build-sass": "gulp build-sass",
+    "uswds-build-app": "gulp build-app",
+    "uswds-copy-assets": "npm run uswds-copy-js && npm run uswds-copy-fonts && npm run uswds-copy-img",
+    "uswds-copy-fonts": "gulp copy-uswds-fonts",
+    "uswds-copy-img": "gulp copy-uswds-images",
+    "uswds-copy-js": "gulp copy-uswds-js",
+    "uswds-copy-theme": "gulp copy-uswds-setup",
+    "uswds-update": "npm update uswds && ./build.sh",
+    "watch": "gulp watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "gulp": "^4.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.37.2",
+    "uswds": "^2.12.0",
+    "uswds-gulp": "github:uswds/uswds-gulp"
   },
   "devDependencies": {
+    "gulp-rename": "^2.0.0",
+    "gulp-svg-sprite": "^1.5.0",
     "pa11y-ci": "^2.4.2",
+    "postcss": "^8.3.6",
+    "postcss-csso": "^5.0.1",
     "standard": "^16.0.3"
   }
 }
