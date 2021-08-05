@@ -50,17 +50,16 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
   word-break: break-all;
 }
 
-.dashed-container {
-  width: 100vw;
-}
-
+$left-dash-width: 50%;
 .dashed {  // based on https://jsfiddle.net/j0y7uaqL/
-  h3 {
-    display: inline-block;
-  }
-  // width: 200%;
-  overflow: hidden;
+  width: 100vw;
+  overflow: visible;
+  white-space: nowrap;
   padding-left: 0 !important;
+  transform: translateX(-$left-dash-width);
+  h3 {
+    display: inline;
+  }
   &:before, &:after {
     content: "";
     display: inline-block;
@@ -68,14 +67,10 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
     border-bottom: 1px dotted color('base-light');
   }
   &:before {
-    width: units($coil-left-padding) * .75;
-    margin: 0 units($coil-left-padding) * .25 0 0;
-    @include at-media('desktop') {
-      width: calc( calc(100vw - 64em) / 2 * .75);
-    }
+    width: $left-dash-width;
   }
   &:after {
-    width: 100%;
+    width: 80%;
     margin: 0 -55% 0 units($coil-left-padding) * .25;
   }
 }
@@ -110,19 +105,7 @@ a[href="mailto:census.openinnovationlabs@census.gov"] {
 .coil-section {
   @include u-padding-top(15);
   @include u-padding-bottom(8);
-  > *:not(.coil-section-exempt) {
-    @include u-padding-x($coil-left-padding);
-    @include u-margin-x('auto', !important);
-    @include at-media('desktop') {
-      &:not(.dashed) {
-        @include u-maxw($theme-grid-container-max-width);
-        @include u-margin-x('auto', !important);
-      }
-      &.dashed {
-        @include u-width($theme-grid-container-max-width);
-      }
-    }
-  }
+  overflow-x: hidden;
   &:first-of-type, &:nth-child(2) {
     @include u-border-top(0);
   }
