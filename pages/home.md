@@ -15,7 +15,7 @@ hero:
 work-section:
   title: Our Work
   icon: /icons/icon_our-work.svg
-  subtitle: Whether you team is looking to build a new tech product, hire new talent, or integrate design thinking into your process, COIL has a program that can help you do it.
+  subtitle: Whether your team is looking to build a new tech product, hire new talent, or integrate design thinking into your process, COIL has a program that can help you do it.
 
 get-involved:
   title: Work With Us
