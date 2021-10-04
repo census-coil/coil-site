@@ -9,7 +9,8 @@ main: foo, bar, qxz
   <head>
     {% include uswds/meta.html %}
     {% include uswds/styles.html %}
-    {% if site.google_analytics_ua or site.dap_agency %}
+    {% if site.google_analytics_gtm or site.dap_agency %}
+      ANALYTICS STUFF
       {% include uswds/analytics.html %}
     {% endif %}
   </head>
