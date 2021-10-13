@@ -33,13 +33,13 @@
   name: Drew Zachary
   pageOrder: 1
   title: Managing Director
-- airtable_createdTime: '2021-04-13T19:13:58.000Z'
-  airtable_id: recd1lEiRkP9bK1Nk
-  email: lorena.molina-irizarry@census.gov
-  img: lorena.jpg
-  name: Lorena Molina-Irizarry
-  pageOrder: 0
-  title: Director of Operations
+# - airtable_createdTime: '2021-04-13T19:13:58.000Z'
+#   airtable_id: recd1lEiRkP9bK1Nk
+#   email: lorena.molina-irizarry@census.gov
+#   img: lorena.jpg
+#   name: Lorena Molina-Irizarry
+#   pageOrder: 0
+#   title: Director of Operations
 - airtable_createdTime: '2021-04-13T19:21:38.000Z'
   airtable_id: receR5hMyRIF4XrLp
   email: emma.t.brennan@census.gov
@@ -47,10 +47,20 @@
   name: Emma Brennan
   pageOrder: 6
   title: Lead Designer
-- airtable_createdTime: '2021-04-13T19:21:46.000Z'
-  airtable_id: reczMos7zAbXuHaHb
-  email: samuel.h.potasznik@census.gov
-  img: sam.jpg
-  name: Sam Potasznik
-  pageOrder: 7
-  title: Web Developer
+# - airtable_createdTime: '2021-04-13T19:21:46.000Z'
+#   airtable_id: reczMos7zAbXuHaHb
+#   email: samuel.h.potasznik@census.gov
+#   img: sam.jpg
+#   name: Sam Potasznik
+#   pageOrder: 7
+#   title: Web Developer
+- email: alessandra.hartkopf.census@gmail.com
+  img: sandra.jpg
+  name: Alessandra Hartkopf
+  pageOrder: 8
+  title: Senior Design Lead
+- email: victoria.fine.census@gmail.com
+  img: victoria.jpg
+  name: Victoria Fine
+  pageOrder: 9
+  title: Lead Program Strategist
