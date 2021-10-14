@@ -40,18 +40,6 @@ Go to `127.0.0.1:4000` in your browser — you should be viewing a local instanc
 
 <br/>
 
-## Importing Data
-
-We use Airtable as our single source of truth for data files, and `/script/airtable.sh` will pull the latest data into the project.
-
-This script does have a dependency of [python3](#) and [airtable-export](#)
-
-After installing those dependencies, set up a `.env` file with `AIRTABLE_TOP_ID` and `AIRTABLE_API_KEY` set for this script to work. Otherwise, you can simply run the `airtable-export` command manually, and it will work as well.
-
-Once your `airtable-export` and your `.env` file are set up, `npm run airtable` will pull the latest data from airtable and insert into the `_data` folder for use locally.
-
-<br/>
-
 ## Testing
 
 ### HTML Validation

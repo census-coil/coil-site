@@ -15,7 +15,6 @@
     "url": "git+https://github.com/uscensusbureau/the-opportunity-project"
   },
   "scripts": {
-    "airtable": "(./scripts/airtable.sh)",
     "cypress": "npx cypress open",
     "html-proofer": "htmlproofer --allow_hash_href --assume_extension --only_4xx ./_site",
     "html-proofer:skip-external": "htmlproofer --allow_hash_href --assume_extension --disable_external ./_site",
