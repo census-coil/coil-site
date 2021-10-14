@@ -256,9 +256,9 @@ $left-dash-width: 50%;
   @include at-media('mobile-lg') {
     @include grid-col(4);
   }
-  @include at-media('tablet') {
-    @include grid-col(3);
-  }
+  // @include at-media('tablet') {
+  //   @include grid-col(3);
+  // }
   img {
     border: $dotted-border;
   }

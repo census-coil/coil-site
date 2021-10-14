@@ -1,3 +1,7 @@
+@use "sass:math";
+@use "sass:list";
+@import './custom/links.scss';
+
 html,
 body {
   @include typeset("lang");
@@ -19,5 +23,305 @@ footer {
   justify-content: center;
 }
 
-@import './custom/links.scss';
-@import './custom/coil-site.scss';
+.dark-mode {
+  @include u-bg('base-darkest');
+  @include u-text('white');
+  // @include white-links;
+}
+
+.light-mode {
+  @include u-bg('white');
+  @include u-color('black');
+}
+
+.small-only {
+  @include at-media('tablet'){
+    display: none;
+  }
+}
+.large-only {
+  @include at-media-max('tablet'){
+    display: none;
+  }
+}
+
+$coil-left-padding: 4;
+$coil-left-padding-wide: 10;
+$dotted-border:  1px dotted color('white');
+
+/*****************
+ * Typography
+ ****************/
+h1 {
+  @include u-font('sans', '2xl');
+  @include u-margin(0);
+}
+h2 {
+  @include u-font('sans', 'xl');
+}
+
+h2, h3 {
+  // &:not(.usa-section--dark), &:not(.usa-dark-background) {
+  a {
+    @include u-color('base-darkest');
+  }
+}
+
+a[href="mailto:census.openinnovationlabs@census.gov"] {
+  word-break: break-all;
+}
+
+$left-dash-width: 50%;
+.dashed {  // based on https://jsfiddle.net/j0y7uaqL/
+  width: 100vw;
+  overflow: visible;
+  white-space: nowrap;
+  padding-left: 0 !important;
+  transform: translateX(-$left-dash-width);
+  h3 {
+    display: inline;
+  }
+  &:before, &:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px dotted color('base-light');
+  }
+  &:before {
+    width: $left-dash-width;
+  }
+  &:after {
+    width: 80%;
+    margin: 0 -55% 0 units($coil-left-padding) * .25;
+  }
+}
+
+
+
+/***************
+ * Layout
+ ****************/
+
+.coil-header {
+  @include u-position('sticky');
+  @include u-top('neg-2px');
+  @include u-bg('base-darkest');
+  @include white-links;
+  @include u-border-bottom('2px', 'white');
+  @include u-padding-y(2);
+}
+.coil-navbar {
+  @include u-padding-x(3);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-transform: uppercase;
+    @include u-font("mono", "3xs");
+  }
+}
+
+.coil-section {
+  @include u-padding-top(15);
+  @include u-padding-bottom(8);
+  overflow-x: hidden;
+  &:first-of-type, &:nth-child(2) {
+    @include u-border-top(0);
+  }
+  &:nth-last-child(2) {
+    @include u-padding-top(8);
+    @include u-padding-bottom(10);
+  }
+  &:last-of-type {
+    @include u-padding-bottom(15);
+    @include u-border-top(1px, 'white');
+    @include u-border-bottom(1px, 'white');
+  }
+}
+
+.coil-hero {
+  @include u-margin-top(0);
+}
+
+.coil-project-lg, .project-large-text, .coil-card-container {
+  scroll-margin-top: 7em;
+}
+
+.coil-project-lg {
+  @include grid-col(12);
+  @include u-margin-y(2);
+  .project-content {
+    @include u-radius('md');
+
+  }
+  @include at-media('tablet') {
+    @include grid-col(6);
+  }
+  a {
+    text-decoration: underline;
+  }
+  .project-headers, .project-details {
+    @include u-padding-x(2);
+  }
+  
+  &:first-child {
+    @include grid-col(12);
+    .project-large-text:first-child{
+      @include u-border-bottom(1px);
+    }
+    @include at-media('tablet') {
+      .project-content {
+        @include grid-row;
+        .project-texts {
+          @include grid-col(9);
+          .project-large-text {
+            @include grid-row;
+            @include u-border-right(1px);
+          }
+          .project-headers {
+            @include grid-col(6);
+          }
+          .project-details {
+            @include grid-col(6)
+          }
+        }
+        picture {
+          @include grid-col(3);
+          @include u-order(6);
+          img {
+            height: 100%;
+            object-position: 70% 30%;
+          }
+        }
+      }
+    }
+  }
+  .project-content{
+    border: 1px solid color('base-dark');
+    @include u-height('full');
+  }
+  picture img {
+    width: 100%;
+    @include u-height('card');
+    object-fit: cover;
+    object-position: center 37%;
+  }
+}
+
+.coil-card-container {
+  @include grid-col(12);
+  @include u-margin-bottom(2);
+  @include at-media('mobile-lg'){
+    @include grid-col(6);
+  }
+  @include at-media('tablet') {
+    @include grid-col(4);
+  }
+}
+.coil-project-card {
+  @include u-height('full');
+  @include u-padding(2);
+  @include u-border('1px', 'black');
+  @include u-radius('md');
+  a {
+    text-decoration: underline;
+  }
+  &__with-tags {
+    @extend .coil-project-card;
+    @include u-border(0);
+    @include u-padding-y(1);
+  }
+}
+
+.project-tags {
+  @include u-margin-y(1);
+}
+.project-tag {
+  @include u-font('sans', '3xs');
+  @include u-text('uppercase');
+  @include u-padding-x('05');
+  @include u-border('1px', dotted);
+  @include u-radius('pill');
+  &__comm, &__faci, &__expe, &__prod, &__tale {
+    @extend .project-tag;
+  }
+  &__comm {
+    @include u-color('orange-warm-50v');
+  }
+  &__faci {
+    @include u-color('blue-50v')
+  }
+  &__expe {
+    @include u-color('green-cool-50v');
+  }
+  &__tale {
+    @include u-color('indigo-cool-80v');
+  }
+  &__prod {
+    @include u-color('red-cool-50v');
+  }
+}
+
+.coil-help-list {
+  list-style-type: '\2713';
+  
+  li {
+    @include u-padding-left(1);
+  }
+}
+
+.coil-bio {
+  @include grid-col(6);
+  @include at-media('mobile-lg') {
+    @include grid-col(4);
+  }
+  // @include at-media('tablet') {
+  //   @include grid-col(3);
+  // }
+  img {
+    border: $dotted-border;
+  }
+}
+
+.coil-team-email {
+  @include u-font('sans', '3xs');
+  overflow-wrap: anywhere;
+}
+
+.abstract-icon {
+  @include u-maxh(15);
+  @include u-margin-top(6);
+}
+
+/**********
+ * BUTTONS
+ ***********/
+
+.coil-btn {
+  text-decoration: none;
+  padding: .3rem .5rem;
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+  &__secondary-white {
+    @extend .coil-btn;
+    border: 1px dotted color('white');
+    &:hover, &:active {
+      @include u-border-color('primary-lighter');
+    }
+  }
+  &__primary-white {
+    @extend .coil-btn;
+    color: color('base-darkest') !important;
+    // @include u-color('base-darkest');
+    @include u-bg('white');
+    @include u-padding(1);
+    @include u-text('uppercase');
+    @include u-font('sans', 'xl');
+    &:hover, &:active {
+      @include u-color('base-darkest');
+    }
+  }
+}
