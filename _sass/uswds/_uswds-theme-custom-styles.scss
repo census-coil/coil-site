@@ -273,15 +273,28 @@ $left-dash-width: 50%;
 }
 
 .coil-bio {
+  @include u-margin-bottom(4);
   @include grid-col(6);
   @include at-media('mobile-lg') {
     @include grid-col(4);
   }
+  @include at-media('tablet') {
+    img {
+      @include u-maxh('mobile');
+    }
+    @include grid-col(3);
+  }
+}
+.coil-bio__image {
+  border: $dotted-border;
+}
+.coil-bio__text {
+  text-align: left;
   // @include at-media('tablet') {
-  //   @include grid-col(3);
+  //   padding-left: 1.6rem;
   // }
-  img {
-    border: $dotted-border;
+  h3, p {
+    @include u-margin-y(0);
   }
 }
 
