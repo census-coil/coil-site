@@ -6,21 +6,21 @@
     </div>
     <h2 id="meet-the-team">Meet the Team</h2>
     <div class="grid-row grid-gap">
-      {% assign orderedPeople = site.data.coil_people | sort: "pageOrder" %}
+      {% assign orderedPeople = site.data.coil_people | sort: "name" %}
 
       {% for item in orderedPeople %}
-        <div class="coil-bio">
-          <div class="text-center">
-            {% assign src="team/" | append: item.img %}
-            {% include image.html src=src alt="A picture of a smiling COIL team member"%}
+        <div class="coil-bio text-center">
+          {% assign src="team/" | append: item.img %}
+          {% include image.html src=src alt="A picture of a smiling COIL team member" class="coil-bio__image" %}
+          <div class="coil-bio__text">
+            <h3>{{ item.name }}</h3>
+            {% if item.title %}
+              <p>{{ item.title | upcase }}</p>
+            {% endif %}
+            <p>
+              <a class="coil-bio__email" href="mailto:{{ item.email }}">{{ item.email }}</a>
+            </p>
           </div>
-          <h3>{{ item.name }}</h3>
-          {% if item.title %}
-            <p>{{ item.title | upcase }}</p>
-          {% endif %}
-          <p >
-            <a class="coil-team-email" href="mailto:{{ item.email }}">{{ item.email }}</a>
-          </p>
         </div>
       {% endfor %}
     </div>

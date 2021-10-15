@@ -1,34 +1,28 @@
-- airtable_createdTime: '2021-04-13T19:20:51.000Z'
-  airtable_id: rec2ZyB5e0BT2JOEV
+- 
   email: anna.v.valuev@census.gov
   img: anna.jpg
   name: Anna Valuev
   pageOrder: 4
-  title: Head of Strategic Initiatives
-- airtable_createdTime: '2021-04-13T19:13:58.000Z'
-  airtable_id: rec8k9qIiaBm5l8Ea
+  title: Acting Deputy Director, The Opportunity Project
+- 
   email: haley.m.ashcom@census.gov
   img: haley.jpg
   name: Haley Ashcom Miller
   pageOrder: 2
-  title: Innovation Specialist
-- airtable_createdTime: '2021-04-13T19:21:09.000Z'
-  airtable_id: recMpVsDjA19Oa1lW
+  title: Lead Communications Strategist
+- 
   email: michael.neal.emanuel.t.bagby@census.gov
   img: michael-neal.jpg
   name: Michael-Neal Bagby
   pageOrder: 3
   title: Program Manager, Civic Digital Fellows Program
-- airtable_createdTime: '2021-04-13T19:20:58.000Z'
-  airtable_id: recWIPqbLy2XnHvVb
+- 
   email: dominica.zhu@census.gov
   img: dominica.jpg
   name: Dominica Zhu
   pageOrder: 5
-  title: Lead Program Manager and Impact Strategist
-- airtable_createdTime: '2021-04-13T19:13:58.000Z'
-  airtable_id: recZCPKURCl3VDJlf
-  email: drew.a.zachary@census.gov
+  title: Head of Human Centered Innovation
+- email: drew.a.zachary@census.gov
   img: drew.jpg
   name: Drew Zachary
   pageOrder: 1
@@ -40,17 +34,19 @@
   name: Lorena Molina-Irizarry
   pageOrder: 0
   title: Director of Operations
-- airtable_createdTime: '2021-04-13T19:21:38.000Z'
-  airtable_id: receR5hMyRIF4XrLp
+- 
   email: emma.t.brennan@census.gov
   img: emma.jpg
   name: Emma Brennan
   pageOrder: 6
-  title: Lead Designer
-- airtable_createdTime: '2021-04-13T19:21:46.000Z'
-  airtable_id: reczMos7zAbXuHaHb
-  email: samuel.h.potasznik@census.gov
-  img: sam.jpg
-  name: Sam Potasznik
-  pageOrder: 7
-  title: Web Developer
+  title: Senior UX Designer
+- email: alessandra.v.hartkopf@census.gov
+  img: COIL_headshot_AH.png
+  name: Alessandra Hartkopf
+  pageOrder: 8
+  title: Senior Design Lead
+- email: victoria.fine.census@gmail.com
+  img: COIL_headshot_VF.png
+  name: Victoria Fine
+  pageOrder: 9
+  title: Lead Program Strategist
