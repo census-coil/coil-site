@@ -6,7 +6,7 @@
     </div>
     <h2 id="meet-the-team">Meet the Team</h2>
     <div class="grid-row grid-gap">
-      {% assign orderedPeople = site.data.coil_people | sort: "pageOrder" %}
+      {% assign orderedPeople = site.data.coil_people | sort: "name" %}
 
       {% for item in orderedPeople %}
         <div class="coil-bio text-center">
@@ -18,7 +18,7 @@
               <p>{{ item.title | upcase }}</p>
             {% endif %}
             <p>
-              <a class="coil-team-email" href="mailto:{{ item.email }}">{{ item.email }}</a>
+              <a class="coil-bio__email" href="mailto:{{ item.email }}">{{ item.email }}</a>
             </p>
           </div>
         </div>
