@@ -18,6 +18,7 @@
         callout: Create impact that can scale.
         details: 'Every year, we run The Opportunity Project Prize Challenge to encourage the best teams from TOP to keep going. In 2019, we awarded $100,000 in funding to TOP participants. Learn more about how to apply for the [grand prize challenge](https://opportunity.census.gov/prize-challenge) in 2021 or [contact us](mailto:census.openinnovationlabs@census.gov){: target="_blank" rel="noopener"} to run your own prize challenge.'
         href: http://opportunity.census.gov/prize-challenge
+        isExternal: true
     - title: Enterprise Innovation Efforts
       callout: Learn how innovation can scale at federal agencies.
       details: From Data Science Trainings to large-scale culture change, our team has experience analyzing complex systems and working to transform the federal workforce.
