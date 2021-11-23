@@ -11,7 +11,8 @@
         - Product Development
         - Facilitation
         - Community Engagement
-      href: "https://opportunity.census.gov"
+      href: https://opportunity.census.gov
+      isExternal: true
       subproject:
         title: TOP Prize Challenge
         callout: Create impact that can scale.
