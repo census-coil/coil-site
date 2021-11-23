@@ -19,7 +19,7 @@
     "html-proofer": "htmlproofer --allow_hash_href --assume_extension --only_4xx ./_site",
     "html-proofer:skip-external": "htmlproofer --allow_hash_href --assume_extension --disable_external ./_site",
     "federalist-old": "npm install && ./build.sh && npm run uswds-copy-assets && npm run uswds-build-sass",
-    "federalist": "npm run uswds-copy-assets && npm run uswds-build-sass && bundle exec jekyll serve",
+    "federalist": "npm run uswds-copy-assets && npm run uswds-build-sass",
     "jekyll-install": "gem install bundler && bundle install",
     "pa11y-ci": "pa11y-ci --config pa11y.json",
     "pa11y-ci:sitemap": "pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\"",
