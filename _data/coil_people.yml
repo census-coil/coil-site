@@ -1,23 +1,19 @@
-- 
-  email: anna.v.valuev@census.gov
+- email: anna.v.valuev@census.gov
   img: anna.jpg
   name: Anna Valuev
   pageOrder: 1
   title: Acting Deputy Director, The Opportunity Project
-- 
-  email: haley.m.ashcom@census.gov
+- email: haley.m.ashcom@census.gov
   img: haley.jpg
   name: Haley Ashcom Miller
   pageOrder: 5
   title: Lead Communications Strategist
- - 
-  email: caleb.m.hopler@census.gov
+- email: caleb.m.hopler@census.gov
   img: caleb.jpg
   name: Caleb Hopler
   pageOrder: 2
   title: Innovation Fellowships Program Manager
-- 
-  email: dominica.zhu@census.gov
+- email: dominica.zhu@census.gov
   img: dominica.jpg
   name: Dominica Zhu
   pageOrder: 3
@@ -29,7 +25,7 @@
   pageOrder: 4
   title: Managing Director
 
-- airtable_createdTime: '2021-04-13T19:13:58.000Z'
+- airtable_createdTime: "2021-04-13T19:13:58.000Z"
   airtable_id: recd1lEiRkP9bK1Nk
   email: lorena.molina-irizarry@census.gov
   img: lorena.jpg
