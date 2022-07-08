@@ -45,19 +45,20 @@
   pageOrder: 10
   title: Lead Program Strategist
 
-- img: sadiejay.jpg
+- email: sadie.jay.census@gmail.com
+  img: sadiejay.jpg
   name: Sadie Jay
   pageOrder: 8
   title: Front-end Web Developer
 
-- email: vanessa.l.yip@census.gov
+- email: vanessa.yip.census@gmail.com
   img: vanessayip.png
   name: Vanessa Yip
   pageOrder: 9
   title: UX Designer
   
-# - email: dorcas.lin.census@gmail.com
-- img: dorcaslin.png
+- email: dorcas.lin.census@gmail.com
+  img: dorcaslin.png
   name: Dorcas Lin
   pageOrder: 4
   title: Graphic & Interaction Designer
