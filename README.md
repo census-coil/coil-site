@@ -38,7 +38,19 @@ Go to `127.0.0.1:4000` in your browser — you should be viewing a local instanc
 - `npm start -- --incremental` or `npm run serve`: Runs your local server with incremental regeneration enabled to greatly improve build time. Use instead of `npm start`.
 
 
+**NOTE: Some systems will not compile correctly. Therefore a change in liquid tag logic (ex. html files) is needed to update any change.**
+
 <br/>
+
+## Updating Content
+
+### Team Photos
+
+- Change the coil_people.yml file to reflect current team
+- Add both .png/.jpg and .webp files to the assets/img/team folder 
+   -  Without the .webp file the photo WILL NOT load correctly on the site
+- The .webp file needs to have a size of 214x271
+
 
 ## Testing
 

@@ -6,7 +6,7 @@
 - email: haley.m.ashcom@census.gov
   img: haley.jpg
   name: Haley Ashcom Miller
-  pageOrder: 5
+  pageOrder: 6
   title: Lead Communications Strategist
 - email: caleb.m.hopler@census.gov
   img: caleb.jpg
@@ -22,7 +22,7 @@
 - email: drew.a.zachary@census.gov
   img: drew.jpg
   name: Drew Zachary
-  pageOrder: 4
+  pageOrder: 5
   title: Managing Director
 
 - airtable_createdTime: "2021-04-13T19:13:58.000Z"
@@ -30,7 +30,7 @@
   email: lorena.molina-irizarry@census.gov
   img: lorena.jpg
   name: Lorena Molina-Irizarry
-  pageOrder: 6
+  pageOrder: 7
   title: Director of Operations
 
 - email: alessandra.v.hartkopf@census.gov
@@ -39,8 +39,25 @@
   pageOrder: 0
   title: Lead Design Strategist
 
-- email: victoria.fine.census@gmail.com
+- email: victoria.e.fine@census.gov
   img: COIL_headshot_VF.png
   name: Victoria Fine
-  pageOrder: 7
+  pageOrder: 10
   title: Lead Program Strategist
+
+- img: sadiejay.jpg
+  name: Sadie Jay
+  pageOrder: 8
+  title: Front-end Web Developer
+
+- email: vanessa.l.yip@census.gov
+  img: vanessayip.png
+  name: Vanessa Yip
+  pageOrder: 9
+  title: UX Designer
+  
+# - email: dorcas.lin.census@gmail.com
+- img: dorcaslin.png
+  name: Dorcas Lin
+  pageOrder: 4
+  title: Graphic & Interaction Designer
