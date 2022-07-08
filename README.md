@@ -2,7 +2,7 @@
 
 This repo includes code for the COIL website. [coil.census.gov](https://coil.census.gov/)
 
-It is built with [Jekyll](#) using the [uswds-jekyll theme](#)
+It is built with [Jekyll](https://jekyllrb.com/docs/) using the [uswds-jekyll theme](https://github.com/18F/uswds-jekyll)
 
 <br/>
 
