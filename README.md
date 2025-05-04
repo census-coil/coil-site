@@ -1,6 +1,6 @@
 # The Census Open Innovation Labs Website
 
-This repo includes code for the COIL website. [www.coil.census.gov](www.coil.census.gov)
+This repo includes code for the COIL website. [coil.census.gov](https://coil.census.gov)
 
 It is built with [Jekyll](#) using the [uswds-jekyll theme](#)
 
